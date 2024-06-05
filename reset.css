@@ -62,3 +62,7 @@ button, input, text {
   -moz-appearance: none;
   appearance: none;
 }
+
+p {
+  margin: 0;
+}
