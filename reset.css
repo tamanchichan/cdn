@@ -137,7 +137,6 @@ a, button, input[type=button], input[type=submit], input[type=reset] {
 }
 
 button, input, text {
-<<<<<<< HEAD
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -151,13 +150,3 @@ img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
 }
-=======
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-p {
-  margin: 0;
-}
->>>>>>> 12f631bb776161e608bdd3e5a0daad22f6a03d33
