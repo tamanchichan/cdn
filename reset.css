@@ -46,13 +46,9 @@ html {
 }
 
 body {
-<<<<<<< HEAD
     color: var(--body-color);
     font-size: 18px;
     min-height: 100%;
-=======
-  min-height: 100%;
->>>>>>> 12f631bb776161e608bdd3e5a0daad22f6a03d33
 }
 
 header {
