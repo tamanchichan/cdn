@@ -1,0 +1,20 @@
+.container {
+    margin-inline: auto;
+    width: min(100% - 30px, 1080px);
+}
+
+.flex {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.snap {
+    display: flex;
+    overflow-x: auto;
+    flex-direction: row;
+    padding-bottom: 30px;
+    scroll-snap-type: x mandatory;
+}

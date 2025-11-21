@@ -1,64 +1,148 @@
 @charset "utf-8";
 
+:root {
+    --body-color: #000;
+    
+    --header-bg-color: #f2f4f6;
+    --header-height: 50px;
+    --header-line-height: var(--header-height);
+    
+    --footer-bg-color: #f2f4f6;
+    --footer-min-height: calc(var(--header-height) * 3);
+    
+    --link-color: #000;
+    --link-hover-color: #1a73e8;
+    
+    --button-bg-color: #f0f0f0;
+    --button-border-radius: 5px;
+    --button-box-shadow: 0px 0px 2px rgba(0, 0, 0.25);
+    --button-font-size: 15px;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 * {
-  border-style: none;
-  font-family: inherit;
-  margin: 0px;
-  outline: none;
-  padding: 0px;
-  vertical-align: baseline;
+    border-style: none;
+    font-family: inherit;
+    margin: 0px;
+    outline: none;
+    padding: 0px;
+    vertical-align: baseline;
 }
 
 html {
-  font-family: Inter, Lato, Arial, sans-serif;
-  font-size: 100%;
-  font-weight: 400;
-  height: 100%;
-  line-height: 1.5;
-  text-rendering: geometricPrecision;
-  /* rule specially for chrome, edge and safari / MacOS only */
-  -webkit-font-smoothing: antialiased;
-  /* rule specially for mozila / MacOS only */
-  -moz-osx-font-smoothing: grayscale;
+    font-family: Inter, Lato, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    height: 100%;
+    line-height: 1.5;
+    text-rendering: geometricPrecision;
+    /* rule specially for chrome, edge and safari / MacOS only */
+    -webkit-font-smoothing: antialiased;
+    /* rule specially for mozila / MacOS only */
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  height: 100%;
+    color: var(--body-color);
+    font-size: 18px;
+    min-height: 100%;
 }
 
-ul, ol {
-  list-style: none;
+header {
+    background-color: var(--header-bg-color);
+    height: var(--header-height);
+    line-height: var(--header-line-height)
 }
 
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
+footer {
+    background-color: var(--footer-bg-color);
+    min-height: var(--footer-min-height);
+    padding: 30px;;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+section {
+    margin: 30px 0px;
+}
+
+section:first-child {
+    padding-top: 30px;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    overflow-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+p {
+    letter-spacing: 1.25px;
 }
 
 a {
-  text-decoration: none;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+button {
+    background-color: var(--button-bg-color);
+    border-radius: var(--button-border-radius);
+    box-shadow: var(--button-box-shadow);
+    font-size: var(--button-font-size);
+    height: fit-content;
+    letter-spacing: 2.5px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    width: fit-content;
 }
 
 a, button, figure, i, img, input, input[type=button], input[type=submit], li {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 a, button, input[type=button], input[type=submit], input[type=reset] {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 button, input, text {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
 }
