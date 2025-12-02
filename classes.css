@@ -7,11 +7,11 @@
     display: flex;
 }
 
-.hidden {
-    display: hidden;
+.hide {
+    visibility: hidden;
 }
 
-.none {
+.hidden {
     display: none;
 }
 
