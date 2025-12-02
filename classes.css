@@ -8,6 +8,10 @@
 }
 
 .hidden {
+    display: hidden;
+}
+
+.none {
     display: none;
 }
 
